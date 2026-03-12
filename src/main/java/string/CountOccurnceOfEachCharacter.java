@@ -1,5 +1,8 @@
 package string;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class CountOccurnceOfEachCharacter {
 	public static void main(String[] args) {
 		String s="Responsible";
@@ -13,7 +16,7 @@ public class CountOccurnceOfEachCharacter {
 
 			 if (s.indexOf(ch) != i) {
 			                continue;
-			            }
+			            } 
 
 			for(int j=0;j<s.length();j++) {
 				if(ch==s.charAt(j)) {
@@ -23,6 +26,32 @@ public class CountOccurnceOfEachCharacter {
 			System.out.println(ch +"=="+count+"");
 			
 		}
+		
+		
+		
+		
+		//using map
+		
+		Map<Character, Integer> charCountMap = new HashMap<>();
+
+        // Iterate through each character
+        for (char ch : s.toCharArray()) {
+            // Update count in map
+            charCountMap.put(ch, charCountMap.getOrDefault(ch, 0) + 1);
+        }
+
+        // Print results
+        for (Map.Entry<Character, Integer> entry : charCountMap.entrySet()) {
+            System.out.println(entry.getKey() + " == " + entry.getValue());
+        }
+
 	}
 
 }
+
+
+
+
+
+
+
