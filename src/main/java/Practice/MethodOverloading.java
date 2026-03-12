@@ -1,6 +1,6 @@
  package Practice;
 
-public class Demo {
+public class MethodOverloading {
 	void payment()
 	{
 	   System.out.println("Write logic for  cash")	;
@@ -18,7 +18,7 @@ public class Demo {
 class Example
 {public static void main (String [] args)
 	{
-	  Demo d=new Demo();
+	  MethodOverloading d=new MethodOverloading();
 	  d.payment();
 	}
 	}
