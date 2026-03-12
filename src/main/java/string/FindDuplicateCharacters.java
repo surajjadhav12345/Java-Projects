@@ -2,7 +2,7 @@ package string;
 
 public class FindDuplicateCharacters {
 	public static void main(String[] args) {
-        String s= "Suraj";
+        String s= "Suraaj";
         
         for(int i=0;i<s.length();i++) {
         char ch= s.charAt(i);
