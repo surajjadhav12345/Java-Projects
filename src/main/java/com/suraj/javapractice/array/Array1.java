@@ -1,0 +1,18 @@
+package com.suraj.javapractice.array;
+
+public class Array1 {
+
+	public static void main(String[] args) {
+	
+		int a [] = new int [3];
+		a[0]=10;
+		a[1]=20;
+		a[2]=30;
+		System.out.println(a[1]);
+		for(int i = a.length-1;i>=0;i--)
+		{
+			System.out.println(a[i]);
+		}
+	}
+
+}
